@@ -3,24 +3,27 @@
 	<head>
 		<link rel="stylesheet" href="css/user_style.css">
 		<title>User VonC - Stack Overflow</title>
-		<link rel="icon" type="image/x-icon" href="Assets/Assets/images/stack-overflow.png">
+		<link rel="icon" type="image/x-icon" href="Assets/images/stack-overflow.png">
 	</head>
 	<body>
-        	<header class="header">
-			<div class="logo">
-				<img src="Assets/images/logo-stackoverflow.png" alt="Image Not Found">
-			</div>
-			<div class="">
-				<a href="">About</a>
-				<a href="">Products</a>
-				<a href="">OverflowAI</a>
-				<div class="input_box">
- 					<img src="Assets/images/search.png" alt="Image Not Found">
+        	<header >
+			<div class="header_div">
+				<a class="logo" href="">
+					<img src="assets/images/logo-stackoverflow.png" alt="Image Not Found">
+				</a>
+				<div class="header_list">
+					<a href="">About</a>
+					<a href="" class="products">Products</a>
+					<a href="">OverflowAI</a>
+				</div>
+				<form class="input_box">
 					<input type="text" placeholder="Search..." value="user:6309">
-	    			</div>
-             			<button class="login">Log in</button>
-             			<button class="signup">Sign up</button>
-          		</div>
+				</form>
+				<div class="header_button">
+             				<button class="login">Log in</button>
+             				<button class="signup">Sign up</button>
+				</div>
+			</div>
         	</header>
           	<div class="container">
  <!-- NAV -->
@@ -39,19 +42,19 @@
 						<a href="">Tags</a>
 					</div>
 		  			<br>
-                  			<div class="nav_item active">
+                  			<div class="nav_item nav_active">
 						<img src="Assets/images/users2.png" alt="Image Not Found" class="nav_image">
 						<a href="">Users</a>
 					</div>
                   			<div class="nav_item">
 						<img src="Assets/images/business-and-trade.png" alt="Image Not Found" class="nav_image">
 						<a href="">Companies</a></div>
-                  			<div class="nav_labs">
+                  			<div class="nav_headings">
 						<label>LABS</label>
 						<img src="Assets/images/info.png" alt="Image Not Found" >
 					</div>
-                  			<div class="nav_item">
-						<img src="Assets/images/bag.png" alt="Image Not Found" class="nav_image">
+                  			<div class="nav_item nav_jobs">
+						<img src="Assets/images/bag.png" alt="Image Not Found" class="nav_lab_img">
 						<a href="" >Jobs</a>
 					</div>
                   			<div class="nav_item">
@@ -59,20 +62,20 @@
 						<a href="">Discussions</a>
 					</div>
 
-                  			<span class="nav_labs"><label>RECENT TAGS</label></span>
+                  			<span class="nav_headings"><label>RECENT TAGS</label></span>
 		  			<div class="nav_item"><img src="Assets/images/single_tag.png" alt="Image Not Found" class="nav_image"><a href="">css</a></div>
 		  			<div class="nav_item"><img src="Assets/images/single_tag.png" alt="Image Not Found" class="nav_image"><a href="">twitter-bootstrap</a></div>
 		  			<div class="nav_item"><img src="Assets/images/single_tag.png" alt="Image Not Found" class="nav_image"><a href="">twitter-bootstra...</a></div>
 				   	<div class="nav_item"><img src="Assets/images/single_tag.png" alt="Image Not Found" class="nav_image"><a href="">focus</a></div>
 		  			<div class="nav_item"><img src="Assets/images/single_tag.png" alt="Image Not Found" class="nav_image"><a href="">hover</a></div>
 
-                  			<span class="nav_labs">
+                  			<span class="nav_headings">
 						<label>COLLECTIVES</label>
 						<img src="Assets/images/add.png" alt="Image Not Found">
 					</span>
                   			<p class="nav_collective_elements">Communities for your favorite technologies. <a href="">Explore all Collectives</a></p>
 
-                  			<div class="nav_labs">
+                  			<div class="nav_headings">
 						<label>TEAMS</label>
 					</div>
                   			<img src="Assets/images/Overflow_Ai.png" class="overflow_ai" alt="Image Not Found">
@@ -85,19 +88,22 @@
           		<main>
  <!--PROFILE -->
             			<div class="profile_top">
-              				<img src="Assets/images/profile_image.jpg" alt="Image Not Found">
+              				<img src="Assets/images/profile_image.jpg" alt="Image Not Found" class="profile_pic">
               				<div class="profile_text">
                 				<label class=profile_name>VonC</label>
-               				 	<br>
-                				<label class=profile_details><img src="Assets/images/birthday-cake-512.png" alt="Image Not Found"> Member for 16 years 
-                  					<img src="Assets/images/clock-3-512.png" alt="Image Not Found">  Last seen this week
-               					</label>
-                  				<br>
-                  				<label class=profile_details>
+               				 	<div class="profile_details">
+                				<span>
+							<img src="Assets/images/birthday-cake-512.png" alt="Image Not Found">Member for 16 years
+                  					<img src="Assets/images/clock-3-512.png" alt="Image Not Found">Last seen this week
+               					</span>
+                  				
+                  				<span>
                   					<img src="Assets/images/twitter-512.png" alt="Image Not Found">
-							<img src="Assets/images/github-9-512.png" alt="Image Not Found"> <img src="Assets/images/link-6-512.png" alt="Image Not Found"> devstory.fyi/vonc
+							<img src="Assets/images/github-9-512.png" alt="Image Not Found"> 
+							<img src="Assets/images/link-6-512.png" alt="Image Not Found"> devstory.fyi/vonc
                   					<img src="Assets/images/pin-8-512.png" alt="Image Not Found"> France
-                				</label>
+                				</span>
+						</div>
               				</div>
               				<button class="profile_but">Profiles &#11206;</button>
             			</div>
@@ -120,7 +126,7 @@
                     							<div class=stats_text>29,659 <small>answers</small></div>
                     							<div class=stats_text>16<small> questions</small></div>
                   						</div>
-                  						<div class="trophy-div">
+                  						<div class="trophy_div">
                     							<img src="Assets/images/trophy.png" alt="Image Not Found"> 
                     							<small class="small-text">#1 this week</small>
                   						</div>
